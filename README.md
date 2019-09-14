@@ -40,8 +40,8 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Asia/Dubai \
-  -v /srv/dev-disk-by-id-usb-WD_My_Passport_25E1_575841314132383436565444-0-0-part1/pihole/pihole/:/etc/pihole/ \
-  -v /srv/dev-disk-by-id-usb-WD_My_Passport_25E1_575841314132383436565444-0-0-part1/pihole/dnsmasq.d/:/etc/dnsmasq.d/ \
+  -v /mnt/omv/pihole/pihole/:/etc/pihole/ \
+  -v /mnt/omv/pihole/dnsmasq.d/:/etc/dnsmasq.d/ \
   -e 127.0.0.1 \
   -e 1.1.1.1 \
   --restart=unless-stopped \
