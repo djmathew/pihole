@@ -55,6 +55,6 @@ docker logs pihole 2> /dev/null | grep 'password'
 docker exec -it pihole pihole -a -p 
 ```
 ### Accessing the admin portal
-piomv.local:8080/admin
+<url-or-ip>:8080/admin
 ### Now force clients to use the new DNS by changing the Router Primary DNS to ip address of pihole
 For DLINK - Settings > Internet > ivp4
